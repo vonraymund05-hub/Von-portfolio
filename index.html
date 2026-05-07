@@ -1,93 +1,304 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Von Raymund Turba - Portfolio</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVIGATION -->
 <nav>
     <h2 class="logo">VRT</h2>
+
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+
+    <!-- DARK MODE BUTTON -->
+    <button onclick="toggleDarkMode()" class="dark-btn">
+        🌙
+    </button>
 </nav>
 
 <div class="container">
-    
+
+    <!-- HERO SECTION -->
     <header>
-        <img src="profile.png" alt="Profile Picture" class="profile-pic">
+
+        <div class="profile-container">
+            <img src="profile.png" alt="Profile Picture" class="profile-pic">
+        </div>
+
         <h1>Von Raymund Turba</h1>
-        <p>Computer Engineering Student</p>
-        <a href="resume.pdf" class="btn" download>Download Resume</a>
+
+        <!-- TYPING TEXT -->
+        <p class="typing-text">
+            Computer Engineering Student | Future IT Specialist
+        </p>
+
+        <p class="intro">
+            Hello, I'm Von Raymund Turba, a passionate Computer Engineering student
+            with experience in Arduino-based systems, circuit design, PCB development,
+            and web development. I enjoy building projects that combine both hardware
+            and software technologies while continuously improving my technical skills.
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="hero-buttons">
+
+            <a href="VonRaymund_Turba_Resume.pdf"
+            class="btn"
+            download>
+                <i class="fa-solid fa-download"></i>
+                Download Resume
+            </a>
+
+            <a href="#contact" class="btn secondary-btn">
+                <i class="fa-solid fa-envelope"></i>
+                Contact Me
+            </a>
+
+        </div>
+
     </header>
 
+    <!-- ABOUT -->
     <section id="about">
+
         <h2>About Me</h2>
-        <p>
-            Hello, I'm VonRaymund Turba, a Computer Engineering student with experience in 
-            Arduino-based systems, circuit design, and PCB development. I also enjoy building 
-            websites and developing simple software applications, continuously improving my 
-            skills in both hardware and software technologies.
-        </p>
+
+        <div class="glass-card">
+
+            <p>
+                Passionate about technology, embedded systems, and software development.
+                I enjoy creating practical projects that solve real-world problems using
+                both hardware and software solutions.
+            </p>
+
+            <p>
+                I am continuously learning new technologies in programming,
+                databases, networking, and web development to improve my
+                future career opportunities in the IT industry.
+            </p>
+
+        </div>
+
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
+
         <h2>Skills</h2>
 
-        <h3>Programming</h3>
-        <ul>
-            <li>C / C++</li>
-            <li>Python</li>
-            <li>Java (Basic)</li>
-        </ul>
+        <div class="skills-grid">
 
-        <h3>Web Development</h3>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-        </ul>
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Programming</h3>
 
-        <h3>Database</h3>
-        <ul>
-            <li>MySQL</li>
-        </ul>
+                <ul>
+                    <li>C / C++</li>
+                    <li>Python</li>
+                    <li>Java (Basic)</li>
+                </ul>
+            </div>
 
-        <h3>Hardware & Embedded Systems</h3>
-        <ul>
-            <li>Basic Electronics</li>
-            <li>Digital Logic Circuits</li>
-            <li>Microcontrollers (Arduino)</li>
-            <li>Circuit Design & PCB Layout</li>
-        </ul>
+            <div class="skill-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Web Development</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+
+                <ul>
+                    <li>MySQL</li>
+                    <li>SQL Server</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Embedded Systems</h3>
+
+                <ul>
+                    <li>Arduino</li>
+                    <li>PCB Layout</li>
+                    <li>Circuit Design</li>
+                    <li>Digital Logic</li>
+                </ul>
+            </div>
+
+        </div>
+
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
+
         <h2>Projects</h2>
 
-        <p><strong>Inventory Management System</strong> - Developed using MySQL to manage product data.</p>
-        <p><strong>Smart Door System</strong> - Built using Arduino and sensors for access control.</p>
-        <p><strong>Smart Irrigation System</strong> - Automated watering system using sensors.</p>
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <h3>Inventory Management System</h3>
+
+                <p>
+                    Developed using MySQL to manage products,
+                    inventory records, and item tracking efficiently.
+                </p>
+
+                <span class="project-tech">
+                    HTML • CSS • MySQL
+                </span>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Smart Door System</h3>
+
+                <p>
+                    Arduino-based security system using sensors
+                    for automated door access control.
+                </p>
+
+                <span class="project-tech">
+                    Arduino • Sensors • C++
+                </span>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Smart Irrigation System</h3>
+
+                <p>
+                    Automated irrigation project using soil
+                    moisture sensors and Arduino technology.
+                </p>
+
+                <span class="project-tech">
+                    Arduino • Automation
+                </span>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Personal portfolio website showcasing my
+                    skills, projects, and achievements.
+                </p>
+
+                <span class="project-tech">
+                    HTML • CSS • JavaScript
+                </span>
+
+            </div>
+
+        </div>
+
     </section>
 
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+
+        <h2>Certificates</h2>
+
+        <div class="certificate-card">
+
+            <p>
+                Add your future certificates here:
+            </p>
+
+            <ul>
+                <li>Programming Certificates</li>
+                <li>Seminars & Workshops</li>
+                <li>TESDA Certificates</li>
+                <li>IT Related Trainings</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:vonraymund05@email.com">vonraymund05@email.com</a></p>
-        <p>Phone: 09278471317</p>
-        <p>Facebook: Von Raymund Turba</p>
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                Email:
+                <a href="mailto:vonraymund05@email.com">
+                    vonraymund05@email.com
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                09278471317
+            </p>
+
+            <p>
+                <i class="fa-brands fa-facebook"></i>
+                Von Raymund Turba
+            </p>
+
+            <p>
+                <i class="fa-brands fa-instagram"></i>
+                @vonraymundturba
+            </p>
+
+        </div>
+
     </section>
 
 </div>
 
-<script>
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-}
-</script>
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Von Raymund Turba
+    </p>
+
+    <p>
+        Built with HTML, CSS & JavaScript
+    </p>
+
+</footer>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
