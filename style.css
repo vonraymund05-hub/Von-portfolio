@@ -341,12 +341,77 @@ h2 {
     font-size: 14px;
 }
 
-/* CERTIFICATE CARD */
-.certificate-card {
-    text-align: center;
-    line-height: 1.8;
+/* CERTIFICATE GRID */
+.certificate-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
 }
 
+/* CERTIFICATE ITEM */
+.certificate-item {
+    background: #f9fbff;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    border-top: 5px solid #1e66ff;
+}
+
+.certificate-item:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* CERTIFICATE IMAGE */
+.certificate-image {
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+}
+
+.certificate-image:hover {
+    transform: scale(1.03);
+}
+
+.certificate-item h3 {
+    color: #0a3d91;
+
+    margin-bottom: 10px;
+}
+
+.certificate-item span {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    background: #1e66ff;
+
+    color: white;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
 /* CONTACT */
 .contact-container {
     text-align: center;
